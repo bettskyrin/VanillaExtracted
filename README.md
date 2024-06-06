@@ -16,3 +16,26 @@ Read the wiki for more information.
 **Join the Discussion: https://github.com/bettskyrin/vanilla-extracted/discussions**
 
 **Leave a Donation: https://github.com/sponsors/bettskyrin**
+
+***
+
+Notes from Kyrin:
+Much like the mod itself, file structure is meant to replicate Mojang, however I do my best to comment things to make it easier on anyone else reading the code.
+Special thanks to donators:
+No one yet :)
+
+Special thanks to mods that inspired features:
+Animal Feeding Trough
+Bundle Tweaks
+Bushier Flowers
+Easy Anvils
+Easy Magic
+Fabric Seasons
+Farmer's Delight
+LambDynamicLights
+Model Gap Fix
+Scorchful
+Snow Real Magic
+Snowy Spirit
+Stylish Stiles
+Trinkets
