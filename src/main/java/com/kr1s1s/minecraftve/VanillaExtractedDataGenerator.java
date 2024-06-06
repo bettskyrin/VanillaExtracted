@@ -1,5 +1,6 @@
 package com.kr1s1s.minecraftve;
 
+import com.kr1s1s.datagen.ModelProviderVE;
 import com.kr1s1s.datagen.RecipeProviderVE;
 import com.kr1s1s.item.ItemsVE;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -11,6 +12,7 @@ public class VanillaExtractedDataGenerator implements DataGeneratorEntrypoint {
 		VanillaExtracted.LOGGER.info("Initializing " + VanillaExtracted.MOD_ID + "data generator...");
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(RecipeProviderVE::new);
+		pack.addProvider(ModelProviderVE::new);
 		VanillaExtracted.LOGGER.info("Initialized " + VanillaExtracted.MOD_ID + "data generator.");
 	}
 }
