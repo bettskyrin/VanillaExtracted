@@ -1,5 +1,6 @@
 package com.kr1s1s.minecraftve;
 
+import com.kr1s1s.item.ItemsVE;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,7 +13,7 @@ public class VanillaExtracted implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing " + MOD_ID + " files...");
-
+		ItemsVE.registerItems();
 		LOGGER.info("Initialized " + MOD_ID + "files.");
 	}
 }

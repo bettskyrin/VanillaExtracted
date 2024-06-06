@@ -1,0 +1,25 @@
+package com.kr1s1s.datagen;
+
+import com.kr1s1s.item.ItemsVE;
+import com.kr1s1s.minecraftve.VanillaExtracted;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.ItemModelGenerator;
+import net.minecraft.data.client.Models;
+
+public class ModelProviderVE extends FabricModelProvider {
+    public ModelProviderVE(FabricDataOutput output) {
+        super(output);
+    }
+
+    @Override
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
+    }
+
+    @Override
+    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ItemsVE.APPLE_PIE, Models.GENERATED);
+    }
+}
