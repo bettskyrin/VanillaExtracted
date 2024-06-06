@@ -23,7 +23,8 @@ public class LootTablesVE {
                         .conditionally(RandomChanceLootCondition.builder(0.15F))
                         .with(ItemEntry.builder(ItemsVE.APPLE_PIE))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 1.0F)).build());
-                tableBuilder.modifyPools((Consumer<? super LootPool.Builder>) poolbuilder).pool(poolbuilder.build()); // FIXME
+                tableBuilder.modifyPools(builder -> poolbuilder.build());
+                //tableBuilder.modifyPools((Consumer<? super LootPool.Builder>) poolbuilder).pool(poolbuilder.build()); // FIXME
             }
         }));
     }
