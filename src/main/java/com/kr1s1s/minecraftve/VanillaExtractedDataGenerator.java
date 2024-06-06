@@ -1,8 +1,7 @@
 package com.kr1s1s.minecraftve;
 
-import com.kr1s1s.datagen.ModelProviderVE;
-import com.kr1s1s.datagen.RecipeProviderVE;
-import com.kr1s1s.item.ItemsVE;
+import com.kr1s1s.minecraftve.datagen.ModelProviderVE;
+import com.kr1s1s.minecraftve.datagen.RecipeProviderVE;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
