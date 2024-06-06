@@ -9,6 +9,8 @@ From food to foes, you'll be able to find new, yet oddly familiar features inspi
 Read the wiki for more information.
 
 ***
+## Resources:
+
 **Explore the Wiki: https://github.com/bettskyrin/vanilla-extracted/wiki**
 
 **Report an Issue/Make a Suggestion: https://github.com/bettskyrin/vanilla-extracted/issues**
@@ -19,23 +21,41 @@ Read the wiki for more information.
 
 ***
 
-Notes from Kyrin:
+## Notes from Kyrin:
+
 Much like the mod itself, file structure is meant to replicate Mojang, however I do my best to comment things to make it easier on anyone else reading the code.
-Special thanks to donators:
+
+### Special thanks to donators:
+
 No one yet :)
 
-Special thanks to mods that inspired features:
+
+### Special thanks to mods that inspired features:
+
 Animal Feeding Trough
+
 Bundle Tweaks
+
 Bushier Flowers
+
 Easy Anvils
+
 Easy Magic
+
 Fabric Seasons
+
 Farmer's Delight
+
 LambDynamicLights
+
 Model Gap Fix
+
 Scorchful
+
 Snow Real Magic
+
 Snowy Spirit
+
 Stylish Stiles
+
 Trinkets
