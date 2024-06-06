@@ -1,4 +1,4 @@
-package com.kr1s1s.component.type;
+package com.kr1s1s.minecraftve.component.type;
 
 import net.minecraft.component.type.FoodComponent;
 

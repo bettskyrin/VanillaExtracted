@@ -1,7 +1,6 @@
-package com.kr1s1s.datagen;
+package com.kr1s1s.minecraftve.datagen;
 
-import com.kr1s1s.item.ItemsVE;
-import com.kr1s1s.minecraftve.VanillaExtracted;
+import com.kr1s1s.minecraftve.item.ItemsVE;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;

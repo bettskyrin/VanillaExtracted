@@ -1,11 +1,10 @@
-package com.kr1s1s.datagen;
+package com.kr1s1s.minecraftve.datagen;
 
-import com.kr1s1s.item.ItemsVE;
+import com.kr1s1s.minecraftve.item.ItemsVE;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
