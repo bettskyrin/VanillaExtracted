@@ -32,6 +32,8 @@ No one yet :)
 
 ### Special thanks to mods that inspired features:
 
+AppleSkin
+
 Animal Feeding Trough
 
 Bundle Tweaks
