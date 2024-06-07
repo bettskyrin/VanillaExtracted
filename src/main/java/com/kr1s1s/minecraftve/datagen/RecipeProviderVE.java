@@ -18,7 +18,7 @@ public class RecipeProviderVE extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
-        /* Food */
+        // Food
         // Apple Pie
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.APPLE_PIE, 1)
                 .input(Items.APPLE)
@@ -26,5 +26,6 @@ public class RecipeProviderVE extends FabricRecipeProvider {
                 .input(Items.EGG)
                 .criterion(FabricRecipeProvider.hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                 .offerTo(exporter);
+        //
     }
 }
