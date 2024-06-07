@@ -27,7 +27,7 @@ public class MilkBottleItem extends Item {
         if (playerEntity instanceof ServerPlayerEntity) {
             Criteria.CONSUME_ITEM.trigger((ServerPlayerEntity)playerEntity, stack);
         }
-        if (!world.isClient) { // Effects
+        if (!world.isClient) { // Reduce effect time by half.
             int halfedDuration;
             for(StatusEffectInstance instance : user.getStatusEffects()) {
                 if (instance.getDuration() > 0) {
