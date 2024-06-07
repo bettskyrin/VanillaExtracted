@@ -1,6 +1,7 @@
 package com.kr1s1s.minecraftve;
 
 import com.kr1s1s.minecraftve.item.ItemsVE;
+import com.kr1s1s.minecraftve.village.TradeOffersVE;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,5 +16,6 @@ public class VanillaExtracted implements ModInitializer {
 		LOGGER.info("Initializing " + MOD_ID + " files...");
 		ItemsVE.registerItems();
 		LOGGER.info("Initialized " + MOD_ID + "files.");
+		TradeOffersVE.modifyTradeOffers();
 	}
 }
