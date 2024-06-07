@@ -26,9 +26,21 @@ public class HotCocoaItem extends Item {
         if (playerEntity instanceof ServerPlayerEntity) {
             Criteria.CONSUME_ITEM.trigger((ServerPlayerEntity)playerEntity, stack);
         }
-        if (!world.isClient) { // Effects
-            int newFrozenTicks = user.getFrozenTicks() - 200;
-            user.setFrozenTicks(newFrozenTicks);
+        if (!world.isClient) {
+            int newFrozenTicks = user.getFrozenTicks();
+            int isWarmMaxTicks = 60;
+            int isWarmMinTicks = 20;
+            int minWarmTicks = -40;
+
+            if (newFrozenTicks > minWarmTicks) {
+                if (newFrozenTicks > isWarmMaxTicks) {
+                    while (newFrozenTicks > isWarmMinTicks) {
+                        user.setFrozenTicks(--newFrozenTicks);
+                    }
+                } else {
+                    user.setFrozenTicks(minWarmTicks);
+                }
+            }
         }
         if (playerEntity != null) {
             playerEntity.incrementStat(Stats.USED.getOrCreateStat(this));
