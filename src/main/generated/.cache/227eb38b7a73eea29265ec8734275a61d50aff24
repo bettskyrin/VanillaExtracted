@@ -1,9 +1,9 @@
-// 1.21 Pre-Release 3	2024-06-07T02:52:18.4870417	Vanilla Extracted/Recipes
+// 1.21 Pre-Release 3	2024-06-07T02:57:32.3273384	Vanilla Extracted/Recipes
 5830fa07d23147fff83679f9742f80818f3b6101 data\minecraftve\advancement\recipes\food\apple_pie.json
+52f248ad28aff5b84b2c29a95664974872a6100c data\minecraftve\recipe\hot_cocoa_from_milk_bucket.json
 67524e81974e414b01ed858ad0654f1a1bb4cc1c data\minecraftve\recipe\apple_pie.json
 21638444a1a4dd889733a29be403188cf0539726 data\minecraftve\recipe\hot_cocoa.json
 440e4210fd2c44a7dab96a542615149c28af64ce data\minecraftve\advancement\recipes\food\hot_cocoa.json
+8087ed7a8827f2f67ed7dad7df969fada7ef898f data\minecraftve\advancement\recipes\food\hot_cocoa_from_milk_bucket.json
 3baefc166ddb7354e594d1549705d061a2e48149 data\minecraftve\advancement\recipes\food\milk_bottle.json
-bf161ab45e2e148787c1ba5392dfd759954c7ae2 data\minecraftve\advancement\recipes\food\hot_cocoa_2.json
-52f248ad28aff5b84b2c29a95664974872a6100c data\minecraftve\recipe\hot_cocoa_2.json
 c91cb5e091ca02a424065c403fc3e80f5427426c data\minecraftve\recipe\milk_bottle.json
