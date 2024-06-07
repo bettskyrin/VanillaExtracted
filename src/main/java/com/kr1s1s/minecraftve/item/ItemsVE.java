@@ -9,9 +9,11 @@ import net.minecraft.util.Identifier;
 
 public class ItemsVE {
     public static Item APPLE_PIE;
+    public static Item MILK_BOTTLE;
 
     static {
         APPLE_PIE = register("apple_pie", new Item((new Item.Settings()).food(FoodComponentsVE.APPLE_PIE)));
+        MILK_BOTTLE = register("milk_bottle", new MilkBottleItem((new Item.Settings().maxCount(16))));
     }
 
     public static Item register(String path, Item item) {
