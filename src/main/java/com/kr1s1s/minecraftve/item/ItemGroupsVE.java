@@ -3,19 +3,23 @@ package com.kr1s1s.minecraftve.item;
 import com.kr1s1s.minecraftve.VanillaExtracted;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 
 public class ItemGroupsVE {
-    private static void itemGroupFood(FabricItemGroupEntries entries) {
+    public static void itemGroupFood(FabricItemGroupEntries entries) { // Item Groups
         entries.addBefore(Items.PUMPKIN_PIE, ItemsVE.APPLE_PIE);
     }
 
-    // TODO Add Compostables
+    public static void registerCompostableItem() { // Compostables
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ItemsVE.APPLE_PIE, 1.0F);
+    }
 
     public static void updateItemGroups() {
         VanillaExtracted.LOGGER.info("Updating item groups...");
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ItemGroupsVE::itemGroupFood);
+        registerCompostableItem();
         VanillaExtracted.LOGGER.info("Updated item groups.");
     }
 }
