@@ -1,7 +1,6 @@
 package com.kr1s1s.minecraftve;
 
 import com.kr1s1s.minecraftve.item.ItemsVE;
-import com.kr1s1s.minecraftve.loot.LootTablesVE;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
