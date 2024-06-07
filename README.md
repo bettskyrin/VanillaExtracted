@@ -1,4 +1,4 @@
-<p align = "center"><img src = "https://i.imgur.com/XLpu2CK.png" height = "120"/></p>
+<p align = "center"><img src = "https://i.imgur.com/XLpu2CK.png" alt = "Vanilla Extracted Logo" height = "120"/></p>
 
 ***
 
