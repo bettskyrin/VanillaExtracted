@@ -25,6 +25,8 @@ Read the wiki for more information.
 
 Much like the mod itself, file structure is meant to replicate Mojang, however I do my best to comment things to make it easier on anyone else reading the code.
 
+This mod ***overrides vanilla loot tables***, meaning that if another mod is installed that does the same, their loot systems may not work.
+
 ### Special thanks to donators:
 
 No one yet :)
