@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:cocoa_beans"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraftve:milk_bottle"
+    },
+    {
+      "item": "minecraftve:milk_bottle"
+    },
+    {
+      "item": "minecraftve:milk_bottle"
+    },
+    {
+      "item": "minecraftve:milk_bottle"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "minecraftve:hot_cocoa"
+  }
+}

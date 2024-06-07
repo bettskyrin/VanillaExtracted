@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -32,5 +33,19 @@ public class RecipeProviderVE extends FabricRecipeProvider {
                 .input(Items.MILK_BUCKET)
                 .criterion(FabricRecipeProvider.hasItem(Items.MILK_BUCKET), FabricRecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
                 .offerTo(exporter);
+        // Hot Cocoa
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.HOT_COCOA, 4)
+                .input(Items.COCOA_BEANS)
+                .input(Items.SUGAR)
+                .input(ItemsVE.MILK_BOTTLE, 4)
+                .criterion(FabricRecipeProvider.hasItem(Items.COCOA_BEANS), FabricRecipeProvider.conditionsFromItem(Items.COCOA_BEANS))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.HOT_COCOA, 4)
+                .input(Items.COCOA_BEANS)
+                .input(Items.SUGAR)
+                .input(Items.GLASS_BOTTLE, 4)
+                .input(Items.MILK_BUCKET)
+                .criterion(FabricRecipeProvider.hasItem(Items.COCOA_BEANS), FabricRecipeProvider.conditionsFromItem(Items.COCOA_BEANS))
+                .offerTo(exporter, Identifier.of("hot_cocoa_from_milk_bucket"));
     }
 }
