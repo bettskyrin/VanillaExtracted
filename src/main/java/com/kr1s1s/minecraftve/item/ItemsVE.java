@@ -9,10 +9,12 @@ import net.minecraft.util.Identifier;
 
 public class ItemsVE {
     public static Item APPLE_PIE;
+    public static Item HOT_COCOA;
     public static Item MILK_BOTTLE;
 
     static {
         APPLE_PIE = register("apple_pie", new Item((new Item.Settings()).food(FoodComponentsVE.APPLE_PIE)));
+        HOT_COCOA = register("hot_cocoa", new HotCocoaItem((new Item.Settings().maxCount(16))));
         MILK_BOTTLE = register("milk_bottle", new MilkBottleItem((new Item.Settings().maxCount(16))));
     }
 
@@ -24,6 +26,5 @@ public class ItemsVE {
         VanillaExtracted.LOGGER.info("Registering " + VanillaExtracted.MOD_ID + " items.");
         ItemGroupsVE.updateItemGroups();
         VanillaExtracted.LOGGER.info("Registered " + VanillaExtracted.MOD_ID + " items.");
-
     }
 }

@@ -10,6 +10,7 @@ import net.minecraft.item.Items;
 public class ItemGroupsVE {
     public static void itemGroupFood(FabricItemGroupEntries entries) { // Item Groups
         entries.addBefore(Items.PUMPKIN_PIE, ItemsVE.APPLE_PIE);
+        entries.addAfter(Items.MILK_BUCKET, ItemsVE.HOT_COCOA);
         entries.addAfter(Items.MILK_BUCKET, ItemsVE.MILK_BOTTLE);
     }
 
