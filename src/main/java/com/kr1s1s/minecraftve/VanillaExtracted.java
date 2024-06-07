@@ -15,7 +15,6 @@ public class VanillaExtracted implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing " + MOD_ID + " files...");
 		ItemsVE.registerItems();
-		LootTablesVE.modifyLootTables();
 		LOGGER.info("Initialized " + MOD_ID + "files.");
 	}
 }
