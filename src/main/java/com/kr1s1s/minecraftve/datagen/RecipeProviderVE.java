@@ -26,6 +26,11 @@ public class RecipeProviderVE extends FabricRecipeProvider {
                 .input(Items.EGG)
                 .criterion(FabricRecipeProvider.hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                 .offerTo(exporter);
-        //
+        // Milk Bottle
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.MILK_BOTTLE, 4)
+                .input(Items.GLASS_BOTTLE, 4)
+                .input(Items.MILK_BUCKET)
+                .criterion(FabricRecipeProvider.hasItem(Items.MILK_BUCKET), FabricRecipeProvider.conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter);
     }
 }
