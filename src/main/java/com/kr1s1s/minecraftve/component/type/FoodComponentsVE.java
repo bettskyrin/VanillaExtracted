@@ -4,4 +4,6 @@ import net.minecraft.component.type.FoodComponent;
 
 public class FoodComponentsVE {
     public static final FoodComponent APPLE_PIE = (new FoodComponent.Builder()).nutrition(8).saturationModifier(0.3F).build();
+    public static final FoodComponent COOKED_SQUID = (new FoodComponent.Builder()).nutrition(5).saturationModifier(0.5F).build();
+    public static final FoodComponent RAW_SQUID = (new FoodComponent.Builder()).nutrition(3).saturationModifier(0.6F).build();
 }

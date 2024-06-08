@@ -9,6 +9,8 @@ import net.minecraft.util.Identifier;
 
 public class ItemsVE {
     public static Item APPLE_PIE;
+    public static Item COOKED_SQUID;
+    public static Item RAW_SQUID;
     public static Item HOT_COCOA;
     public static Item MILK_BOTTLE;
 
@@ -16,6 +18,8 @@ public class ItemsVE {
         APPLE_PIE = register("apple_pie", new Item((new Item.Settings()).food(FoodComponentsVE.APPLE_PIE)));
         HOT_COCOA = register("hot_cocoa", new HotCocoaItem((new Item.Settings().maxCount(16))));
         MILK_BOTTLE = register("milk_bottle", new MilkBottleItem((new Item.Settings().maxCount(16))));
+        COOKED_SQUID = register("raw_squid", new Item((new Item.Settings()).food(FoodComponentsVE.COOKED_SQUID)));
+        RAW_SQUID = register("raw_squid", new Item((new Item.Settings()).food(FoodComponentsVE.RAW_SQUID)));
     }
 
     public static Item register(String path, Item item) {

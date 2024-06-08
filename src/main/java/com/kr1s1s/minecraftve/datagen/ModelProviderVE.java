@@ -20,7 +20,9 @@ public class ModelProviderVE extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ItemsVE.APPLE_PIE, Models.GENERATED);
-        itemModelGenerator.register(ItemsVE.HOT_COCOA, Models.GENERATED);
+        itemModelGenerator.register(ItemsVE.COOKED_SQUID, Models.GENERATED);
         itemModelGenerator.register(ItemsVE.MILK_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ItemsVE.RAW_SQUID, Models.GENERATED);
+        itemModelGenerator.register(ItemsVE.HOT_COCOA, Models.GENERATED);
     }
 }
