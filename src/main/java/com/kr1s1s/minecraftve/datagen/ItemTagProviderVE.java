@@ -19,7 +19,7 @@ public class ItemTagProviderVE extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.FISHES) // Fish
                 .add(ItemsVE.COOKED_SQUID)
                 .add(ItemsVE.RAW_SQUID);
-        getOrCreateTagBuilder(ItemTags.CAT_FOOD)
+        getOrCreateTagBuilder(ItemTags.CAT_FOOD) // Cat Food
                 .add(ItemsVE.COOKED_SQUID)
                 .add(ItemsVE.RAW_SQUID);
     }

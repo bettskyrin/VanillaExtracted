@@ -13,7 +13,7 @@ import java.util.List;
 public class ItemGroupsVE {
     public static List<ItemConvertible> SQUID = List.of(ItemsVE.COOKED_SQUID, ItemsVE.RAW_SQUID);
 
-    public static void itemGroupFood(FabricItemGroupEntries entries) { // Item Groups
+    public static void itemGroupFood(FabricItemGroupEntries entries) { // Foods
         entries.addBefore(Items.PUMPKIN_PIE, ItemsVE.APPLE_PIE);
         entries.addAfter(Items.SUSPICIOUS_STEW, ItemsVE.GRUEL);
         entries.addAfter(Items.MILK_BUCKET, ItemsVE.HOT_COCOA);
