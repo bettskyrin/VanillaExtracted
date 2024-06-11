@@ -23,14 +23,22 @@ public class RecipeProviderVE extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
         // Food
-        // Apple Pie
+        /// Apple Pie
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.APPLE_PIE, 1)
                 .input(Items.APPLE)
                 .input(Items.SUGAR)
                 .input(Items.EGG)
                 .criterion(FabricRecipeProvider.hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                 .offerTo(exporter);
-        // Milk Bottle
+        /// Gruel
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.GRUEL, 1)
+                .input(Items.WHEAT)
+                .input(Items.WHEAT)
+                .input(Items.BOWL)
+                .criterion(FabricRecipeProvider.hasItem(Items.BOWL), conditionsFromItem(Items.BOWL))
+                .offerTo(exporter);
+        /// TODO Add Rice Gruel
+        /// Milk Bottle
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.MILK_BOTTLE, 4)
                 .input(Items.GLASS_BOTTLE, 4)
                 .input(Items.MILK_BUCKET)
@@ -50,7 +58,7 @@ public class RecipeProviderVE extends FabricRecipeProvider {
                 .input(Items.MILK_BUCKET)
                 .criterion(FabricRecipeProvider.hasItem(Items.COCOA_BEANS), FabricRecipeProvider.conditionsFromItem(Items.COCOA_BEANS))
                 .offerTo(exporter, Identifier.of("hot_cocoa_from_milk_bucket"));
-        // Squid
+        /// Squid
         offerSmelting(exporter, ItemGroupsVE.SQUID, RecipeCategory.FOOD, ItemsVE.COOKED_SQUID, 0.35f, 200, "squid");
         CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(ItemsVE.RAW_SQUID), RecipeCategory.FOOD, ItemsVE.COOKED_SQUID, 0.35f, 100)
                 .criterion(FabricRecipeProvider.hasItem(ItemsVE.RAW_SQUID), FabricRecipeProvider.conditionsFromItem(ItemsVE.RAW_SQUID))
@@ -58,6 +66,13 @@ public class RecipeProviderVE extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createCampfireCooking(Ingredient.ofItems(ItemsVE.RAW_SQUID), RecipeCategory.FOOD, ItemsVE.COOKED_SQUID, 0, 600)
                 .criterion(FabricRecipeProvider.hasItem(ItemsVE.RAW_SQUID), FabricRecipeProvider.conditionsFromItem(ItemsVE.RAW_SQUID))
                 .offerTo(exporter, Identifier.of("cooked_squid_from_campfire"));
+
+        // Ingredients
+        /// Black Dye
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.BLACK_DYE, 1)
+                .input(Items.CHARCOAL)
+                .criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL), FabricRecipeProvider.conditionsFromItem(Items.CHARCOAL))
+                .offerTo(exporter, Identifier.of("black_dye_from_charcoal"));
 
     }
 }
