@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "group": "squid",
+  "ingredient": {
+    "item": "minecraftve:cooked_squid"
+  },
+  "result": {
+    "id": "minecraftve:cooked_squid"
+  }
+}

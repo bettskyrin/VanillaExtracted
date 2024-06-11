@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cooked_squid": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraftve:cooked_squid"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:cooked_squid_from_smelting_cooked_squid"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cooked_squid"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:cooked_squid_from_smelting_cooked_squid"
+    ]
+  }
+}
