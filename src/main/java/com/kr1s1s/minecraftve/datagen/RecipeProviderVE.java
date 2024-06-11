@@ -1,5 +1,6 @@
 package com.kr1s1s.minecraftve.datagen;
 
+import com.kr1s1s.minecraftve.VanillaExtracted;
 import com.kr1s1s.minecraftve.item.ItemGroupsVE;
 import com.kr1s1s.minecraftve.item.ItemsVE;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -22,6 +23,7 @@ public class RecipeProviderVE extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+        VanillaExtracted.LOGGER.info("Generating " + VanillaExtracted.MOD_ID + " recipes...");
         // Food
         /// Apple Pie
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ItemsVE.APPLE_PIE, 1)
@@ -74,5 +76,6 @@ public class RecipeProviderVE extends FabricRecipeProvider {
                 .criterion(FabricRecipeProvider.hasItem(Items.CHARCOAL), FabricRecipeProvider.conditionsFromItem(Items.CHARCOAL))
                 .offerTo(exporter, Identifier.of("black_dye_from_charcoal"));
 
+        VanillaExtracted.LOGGER.info("Generated " + VanillaExtracted.MOD_ID + " recipes.");
     }
 }
