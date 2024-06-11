@@ -17,8 +17,8 @@ public class ItemGroupsVE {
         entries.addBefore(Items.PUMPKIN_PIE, ItemsVE.APPLE_PIE);
         entries.addAfter(Items.MILK_BUCKET, ItemsVE.HOT_COCOA);
         entries.addAfter(Items.MILK_BUCKET, ItemsVE.MILK_BOTTLE);
-        entries.addBefore(Items.COD, ItemsVE.COOKED_SQUID);
         entries.addBefore(Items.COD, ItemsVE.RAW_SQUID);
+        entries.addBefore(Items.COD, ItemsVE.COOKED_SQUID);
     }
 
     public static void registerCompostableItem() { // Compostables

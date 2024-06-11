@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cod",
-          "weight": 0
+          "weight": 35
         },
         {
           "type": "minecraft:item",
@@ -25,15 +25,9 @@
           "weight": 13
         },
         {
-          "conditions": [
-            {
-              "condition": "weather_check",
-              "value": "rain"
-            }
-          ],
           "type": "minecraft:item",
-          "name": "minecraft:diamond_block",
-          "weight": 60
+          "name": "minecraftve:raw_squid",
+          "weight": 25
         }
       ],
       "rolls": 1.0

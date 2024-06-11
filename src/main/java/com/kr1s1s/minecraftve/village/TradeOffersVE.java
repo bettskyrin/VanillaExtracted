@@ -10,11 +10,20 @@ import net.minecraft.village.VillagerProfession;
 
 public class TradeOffersVE {
     public static void modifyTradeOffers() {
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factories -> { // Farmer Apprentice
+        //Farmer
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 2, factories -> { // Apprentice
             factories.add((entity, random) -> new TradeOffer(
                     new TradedItem(Items.EMERALD, 1),
                     new ItemStack(ItemsVE.APPLE_PIE, 4),
                     12, 5,0.05F
+            ));
+        });
+        //Fisherman
+        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FISHERMAN, 3, factories -> { // Journeyman
+            factories.add((entity, random) -> new TradeOffer(
+                new TradedItem(Items.EMERALD, 1),
+                new ItemStack(ItemsVE.RAW_SQUID, 8),
+                16, 10, 0.2F
             ));
         });
     }
