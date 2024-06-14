@@ -27,39 +27,7 @@ Much like the mod itself, file structure is meant to replicate Mojang, however I
 
 This mod ***overrides vanilla loot tables***, meaning that if another mod is installed that does the same, their loot systems may not work.
 
-### Special thanks to donators:
+### Special thanks:
+Ellie Martine
 
-No one yet :)
-
-
-### Special thanks to mods that inspired features:
-
-AppleSkin
-
-Animal Feeding Trough
-
-Bundle Tweaks
-
-Bushier Flowers
-
-Easy Anvils
-
-Easy Magic
-
-Fabric Seasons
-
-Farmer's Delight
-
-LambDynamicLights
-
-Model Gap Fix
-
-Scorchful
-
-Snow Real Magic
-
-Snowy Spirit
-
-Stylish Stiles
-
-Trinkets
+### [Special thanks to mods that inspired features](https://github.com/bettskyrin/VanillaExtracted/discussions/27)
